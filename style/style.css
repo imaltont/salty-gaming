@@ -6,10 +6,6 @@
 
 
 /* MAIN STRUCTURE */
-section {
-	padding: 40px 0;
-}
-
 .container {
 	max-width: 960px;
 	margin: 0 auto;
@@ -55,6 +51,11 @@ section {
 	background: pink;
 }
 
+.blue {
+	background: blue;
+	height: 50px;
+	width: 50px;
+}
 
 /* MEDIA QUERIES */ 
 @media (max-width: 960px) {
@@ -79,4 +80,11 @@ section {
 	.col-25 {
 		max-width: 100%;
 	}
+}
+
+
+/* HEADER */
+header {
+	background-color: honeydew;
+	height: 100px;
 }
