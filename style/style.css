@@ -55,6 +55,43 @@ section {
 	background: pink;
 }
 
+/*HTML-ELEMENT STYLES*/
+.nav_button{
+	padding-left: 2em;
+	padding-right: 2em;
+}
+.nav_logo{
+	padding-right: 15em;
+	padding-left: 30em;
+}
+
+footer{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 3em;
+	clear:both;
+}
+
+ul{
+	padding-left: 3em;
+}
+
+div#sidebar{
+
+	float: right;
+	width: 100px;
+	height: 100%;
+	text-align: left;
+	background-color: green;
+}
+
+nav{
+	height: 30px; 
+	width: 100%;
+	background-color: green;
+}
+
 
 /* MEDIA QUERIES */ 
 @media (max-width: 960px) {
