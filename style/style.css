@@ -14,7 +14,11 @@ body {
 h1, h2, h3, h4, h5, h6, a {
 	text-transform: uppercase;
 	letter-spacing: -1px;
-	color: #ffffff;
+	font-family: "Lato";
+	/*color: #ffffff;*/
+}
+div, p, a {
+	font-family: "Open Sans";
 }
 
 h1 {
@@ -60,12 +64,16 @@ h2 {
 /* COLUMNS */
 .col-1 {
 	width: 640px;
-	background: lightyellow;
+	/*background: lightyellow;*/
 }
 
 .col-2 {
 	width: 320px;
-	background: lightblue;
+	/*background: lightblue;*/
+	background: #00a995;
+}
+footer .col-2 {
+	background: inherit;
 }
 
 .col-100 {
@@ -87,13 +95,9 @@ h2 {
 
 
 /*HTML-ELEMENT STYLES*/
-.nav_button{
-	padding-left: 2em;
-	padding-right: 2em;
-}
-.nav_logo{
-	padding-right: 15em;
-	padding-left: 30em;
+
+#about_page h1, #about_page h2{
+	color: #00746b;
 }
 
 .games_button {
@@ -113,27 +117,61 @@ h2 {
 }
 
 footer{
-	position: absolute;
-	bottom: 0;
+	padding-top: 10px;
 	width: 100%;
-	height: 3em;
+	height: 30px;
 	clear:both;
+	float: bottom;
+	font-size: 12px;
+	background: #00746b;
+}
+
+footer div{
+	color: #ffffff;
+}
+
+footer div a{
+	margin-left: 5px;
 }
 
 ul{
 	padding-left: 3em;
 }
 
-div#sidebar{
-
-	float: right;
-	width: 100px;
-	height: 100%;
+div#sidebar h4{
+	color: #ffffff;
 	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #00746b;
+	font-size: 20px;
+	font-family: "Lato";
+}
+div#sidebar{
+	color: #ffffff;
+	background: #00a995;
+	text-align: left;
+	font-size: 15px;
+	font-family: "Open Sans";
 }
 
+div#sidebar a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 15px;
+	font-family: "Open Sans";
+}
 
->>>>>>> 06b7f16c671eb5e92b29f32f3050c1b3a8bb8372
+div#game_chooser {
+	width: 100%;
+	background-color: #282828;
+}
+
+#games_nav{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
 
 /* MEDIA QUERIES */ 
 @media (max-width: 960px) {
@@ -163,7 +201,8 @@ div#sidebar{
 
 /* HEADER */
 header {
-	background: rgba(0,116,107,0.5);
+	/*background: rgba(0,116,107,0.5);*/
+	background: #00746b;
 	height: 120px;
 }
 
@@ -180,7 +219,7 @@ header {
 }
 
 nav {
-	padding-top: 75px;
+	padding-top: 60px;
 	font-size: 20px;
 	letter-spacing: -1px;
 }
@@ -188,6 +227,15 @@ nav a {
 	text-transform: uppercase;
 	text-decoration: none;
 	margin-left: 10px;
+	color: #ffffff;
+}
+
+nav a:hover, .social a:hover{
+	background: #00a995;
+}
+
+.social a{
+	color: #ffffff;
 }
 
 /* ARTICLES */
