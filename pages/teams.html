@@ -5,24 +5,38 @@
 	<link href="../style/style.css" rel="stylesheet">
 </head>
 <body>
-	<nav class="flex">
-		<p class="nav_logo"><img src="../images/logo.png"></p>
-		<p class="nav_button"><a href="index.html">NEWS</a></p>
-		<p class="nav_button"><a href="about.html">ABOUT</a></p>
-		<p class="nav_button"><a href="teams.html">TEAM</a></p>
-		<p class="nav_button"><a href="sponsors.html">SPONSORS</a></p>
-		<p class="nav_button"><a href="shop.html">SHOP</a></p>
-		<p class="nav_button"><a href="contact.html">CONTACT</a></p>
-	</nav>
-
-	<div class="container">
-		<div class="container" id="games">
-			<p class="nav_structure">Team</p>
-			<nav id="games_nav" class="flex">
-				<p class="games_button"><img src="../images/sc2.png"></p>
-				<p class="games_button"><img src="../images/hs.png"></p>
-			</nav>
+	<header>
+		<div class="flex container space-between">
+			<img id="logo" src="../images/logo.png"/>
+			
+			<div>
+				<div class="social" style="float: right; padding-top: 30px;">
+					<a href="">FB</a>
+					<a href="">TW</a>
+					<a href="">YT</a>
+				</div>
+				<nav>
+					<a href="index.html">NEWS</a>
+					<a href="about.html">ABOUT</a>
+					<a href="teams.html">TEAM</a>
+					<a href="sponsors.html">SPONSORS</a>
+					<a href="shop.html">SHOP</a>
+					<a href="contact.html">CONTACT</a>
+				</nav>
+				</div>
 		</div>
+	</header>
+
+	<div id="game_chooser">
+		<div class="container" id="games">
+			<p class="nav_structure" style="color: #b5dad7; padding-top: 5px;">Team</p>
+		</div>
+		<nav id="games_nav" class="flex container" style="background: #inherit;">
+			<p class="games_button"><img src="../images/sc2.png"></p>
+			<p class="games_button"><img src="../images/hs.png"></p>
+		</nav>
+	</div>
+	<div class="container">
 		<div class="container" id="sidebar"></div>
 		<div class="container flex" id="players">
 				<a href="players/player1.html">
@@ -53,6 +67,16 @@
 		</div>
 
 	</div>
-	<footer>Stuff 		goes 		here</footer>
+	<footer class="flex">
+		<div class= "flex container">
+			<div class="col-2" style="text-align: left;">Copyright 2015|All Rights Reserved</div>
+			<div class="col-2" style="text-align: center;"><img src="../images/small_logo.png"></div>
+			<div class="social col-2" style="text-align: right;">
+				<a href="" style="text-align: right;">FB</a>
+				<a href="" style="text-align: right;">TW</a>
+				<a href="" style="text-align: right;">YT</a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
