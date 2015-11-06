@@ -4,9 +4,8 @@
 	padding: 0px;
 }
 
-
 body {
-	font-family: Lato;
+	font-family: "Lato";
 	font-weight: 900;
 }
 
@@ -15,21 +14,27 @@ h1, h2, h3, h4, h5, h6, a {
 	text-transform: uppercase;
 	letter-spacing: -1px;
 	font-family: "Lato";
-	/*color: #ffffff;*/
+	color: #ffffff;
 }
 div, p, a {
 	font-family: "Open Sans";
+	font-size: 15px;
 }
 
 h1 {
 	font-size: 40px;
+	color: #00746b;
 }
 h2 {
 	font-size: 25px;
+	color: #00746b;
+}
+h4 {
+	font-size: 20px;
 }
 
-.colored {
-	color: rgb(0,116,107);
+.top {
+	padding-top: 30px;
 }
 
 /* MAIN STRUCTURE */
@@ -63,17 +68,15 @@ h2 {
 
 /* COLUMNS */
 .col-1 {
-	width: 640px;
-	/*background: lightyellow;*/
+	width: 720px;
 }
 
 .col-2 {
-	width: 320px;
-	/*background: lightblue;*/
+	width: 240px;
 	background: #00a995;
 }
-footer .col-2 {
-	background: inherit;
+.col-3 {
+	width: 360px;
 }
 
 .col-100 {
@@ -93,29 +96,63 @@ footer .col-2 {
 	width: 50px;
 }
 
+/*GENERAL */
 
-/*HTML-ELEMENT STYLES*/
-
-#about_page h1, #about_page h2{
-	color: #00746b;
+/* HEADER */
+header {
+	background: #00746b;
+	height: 120px;
 }
 
-.games_button {
-	width: 50%;
-	text-align: center;
+#logo {
+	padding-top: 20px;
+	max-height: 80px;
+	max-width: auto;
 }
 
-.player{
-	text-align: center;
-	margin: 5px;
-	border: solid;
+nav {
+	padding-top: 30px;
+	letter-spacing: -1px;
+}
+nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 10px;
+	color: #ffffff;
 }
 
-.player_image{
-	width: 200px;
-	height: 500px;
+nav a:hover, .social a:hover{
+	background: #00a995;
 }
 
+.social {
+	float: right;
+	text-align: right;
+}
+
+/* SIDEBAR */
+#sidebar {
+	text-transform: uppercase;
+}
+#sidebar h4{
+	text-align: left;
+	padding: 10px 0;
+	background: #00746b;
+}
+#sidebar{
+	color: #ffffff;
+	background: #00a995;
+	text-align: left;
+}
+
+#sidebar a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 15px;
+}
+
+/* FOOTER */
 footer{
 	padding-top: 10px;
 	width: 100%;
@@ -128,41 +165,58 @@ footer{
 
 footer div{
 	color: #ffffff;
+	font-size: 12px;
+
 }
 
 footer div a{
 	margin-left: 5px;
+
 }
 
+
+/* FRONT PAGE */
+
+/*front page header*/
+.transparent {
+	background: rgba(0,116,107,0.5);*/
+}
+.featured {
+	background: url("../images/featured-bw.jpg");
+	height: 500px;
+	position: relative;
+	background-size: cover;
+}
+
+.featured-headline {
+	display: block;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 150px;
+}
+
+.featured-headline h1 {
+	font-size: 50px;
+	color: #fff;
+}
+
+/* NEWS ARTICLES */
+.article {
+	width: 620px;
+}
+
+
+
+/* ABOUT PAGE */
 ul{
 	padding-left: 3em;
 }
 
-div#sidebar h4{
-	color: #ffffff;
-	text-align: left;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background: #00746b;
-	font-size: 20px;
-	font-family: "Lato";
-}
-div#sidebar{
-	color: #ffffff;
-	background: #00a995;
-	text-align: left;
-	font-size: 15px;
-	font-family: "Open Sans";
-}
-
-div#sidebar a{
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 15px;
-	font-family: "Open Sans";
-}
-
-div#game_chooser {
+/*TEAM PAGE */
+#game_chooser {
 	width: 100%;
 	background-color: #282828;
 }
@@ -172,6 +226,31 @@ div#game_chooser {
 	padding-bottom: 20px;
 }
 
+.games_button {
+	width: 50%;
+	text-align: center;
+}
+
+.player{
+	text-align: center;
+	margin: 5px;
+	border: solid;
+	color: #000;
+}
+
+.player_image{
+	width: 225px;
+	height: 500px;
+}
+
+/* PLAYER PAGE */
+/* player page specific css goes here */
+
+/* CONTACT PAGE */
+/* contact page specific css goes here */
+
+/* SHOP PAGE */
+/* shop page specific css goes here */
 
 /* MEDIA QUERIES */ 
 @media (max-width: 960px) {
@@ -180,15 +259,17 @@ div#game_chooser {
 	}
 
 	.col-1 {
-		max-width: 100%;
+		width: 100%;
 	}
-
 	.col-2 {
-		max-width: 100%;
+		width: 100%;
+	}
+	.col-3 {
+		width: 100%;
 	}
 
 	.col-25 {
-		max-width: 50%;
+		width: 50%;
 	}
 }
 
@@ -196,61 +277,4 @@ div#game_chooser {
 	.col-25 {
 		max-width: 100%;
 	}
-}
-
-
-/* HEADER */
-header {
-	/*background: rgba(0,116,107,0.5);*/
-	background: #00746b;
-	height: 120px;
-}
-
-.featured {
-	background: url("../images/featured-bw.jpg");
-	height: 500px;
-	background-size: cover;
-}
-
-#logo {
-	padding-top: 20px;
-	max-height: 80px;
-	max-width: auto;
-}
-
-nav {
-	padding-top: 60px;
-	font-size: 20px;
-	letter-spacing: -1px;
-}
-nav a {
-	text-transform: uppercase;
-	text-decoration: none;
-	margin-left: 10px;
-	color: #ffffff;
-}
-
-nav a:hover, .social a:hover{
-	background: #00a995;
-}
-
-.social a{
-	color: #ffffff;
-}
-
-/* ARTICLES */
-.article {
-	width: 620px;
-}
-
-.featured-headline {
-	display: block;
-	background: rgba(0,0,0,0.5);
-	margin-top: 240px;
-	padding-top: 10px;
-	height: 150px;
-}
-
-.featured-headline h1 {
-	font-size: 50px;
 }
