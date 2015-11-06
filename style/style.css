@@ -37,13 +37,12 @@ h4 {
 	padding-top: 30px;
 }
 
-/* MAIN STRUCTURE */
+/* MAIN STRUCTURE AND FLEX */
 .container {
 	max-width: 960px;
 	margin: 0 auto;
 }
 
-/* FLEX */ 
 .flex {
 	display: flex;
 }
@@ -246,8 +245,42 @@ ul{
 /* PLAYER PAGE */
 /* player page specific css goes here */
 
+/* SPONSORS PAGE */
+body {
+	background-image: linear-gradient(to bottom, white, white 50%, #b5dad7  50%);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	font-family: Lato;
+	font-weight: 900;
+}
+
+.TextWrapLeft{
+	float: left;
+	margin-right: 50px;
+	/*clear: left;
+	margin: 50px;*/
+}
+
+.SponsorBox {
+	background: #00a995;
+	margin-top: 30px;
+	margin-bottom:75px;
+	padding: 20px;
+}
+
+.SponsorImg {
+	display: inline-block;
+	background-repeat: no-repeat;
+	height: 100px;
+	background-position: 10px}
+
+
+.SponsorInfo{
+	display: inline-block !important;
+}
+
 /* CONTACT PAGE */
-/* contact page specific css goes here */
+
 
 /* SHOP PAGE */
 /* shop page specific css goes here */
