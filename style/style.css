@@ -192,6 +192,14 @@ footer div a{
 	margin-left: 5px;
 }
 
+/*SIDEBAR BUTTONS*/
+.side_button{
+	cursor: pointer;
+}
+.side_button:hover{
+	background: #00746b;
+}
+
 /* FRONT PAGE */
 /*FEATURED AND HEADER*/
 .transparent {
@@ -257,13 +265,19 @@ ul{
 }
 
 #games_nav{
-	padding-top: 30px;
-	padding-bottom: 20px;
+	/*padding-top: 30px;/*
+	/*padding-bottom: 20px;*/
 }
 
 .games_button {
 	width: 50%;
 	text-align: center;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.games_button:hover {
+	background: #1c1c1c;
 }
 
 .player{
