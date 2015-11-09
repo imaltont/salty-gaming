@@ -8,8 +8,8 @@
 </head>
 <body>
 	<header id="page_header"></header>
-	<div class="tha-main">
-		<div class="form">
+	<div class="flex container center">
+		<div class="col-100">
 			<form name="shirtform" id="buy_shirt" action="mailto:embrikeinang@msn.com" method="POST" onsubmit="return formValidation()">
 				<fieldset>
 					<legend> T-shirt</legend>
@@ -49,7 +49,7 @@
 							</p>
 						</div>
 				</fieldset>
-				<em> Due to high demand it's only possible to buy 4 shirts per person. If you have a request, please contact us <a href="contact.html">here.</a> </em>
+				<em> Due to high demand it's only possible to buy 4 shirts per person. If you have a request, please <a href="contact.html">contact us</a></em>
 				<fieldset>
 					<legend> Contact information </legend>
 					<p><label for="fornavn">First name:</label><input id="fornavn" type="text" name="fornavn" size="15"/></p>
@@ -309,8 +309,11 @@
 						<label for="kommentar"></label>
 							<textarea placeholder="Please input your comment here:" rows="5" id="kommentar" cols="40" name="comments" form="buy_shirt"></textarea>				
 				</fieldset>
-				<button type="submit "class="knapp" type="button">ORDER</button>
+				<div class="top">
+					<button type="submit "class="margin-center" type="button">ORDER</button>
+				</div>
 			</form>
+
 		</div>
 	</div>
 	<footer id="page_footer"></footer>
