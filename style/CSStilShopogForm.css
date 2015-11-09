@@ -70,7 +70,7 @@ button {
    color: white;
    font-size: 17px;
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
-   position: relative; 
+   position: inline; 
    left: 820px;
 
    }

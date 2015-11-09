@@ -4,6 +4,10 @@
 	padding: 0px;
 }
 
+em a {
+	color: black;
+}
+
 @font-face {
 	font-family: LatoBlack;
 	src: url("fonts/Lato-Black.ttf");
@@ -418,3 +422,81 @@ ul{
 
 /* SHOP PAGE */
 /* shop page specific css goes here */
+
+
+.overskrift {
+	font-size: 40px;
+	color: #00746b;
+	font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+}
+
+#t-shirt-list {
+	background-color: red;
+}
+
+.price {
+	font-weight: bold;
+}
+
+.form {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+fieldset {
+	margin-top: 50px;
+}
+
+
+.tha-main img {
+	width: 300px;
+	height: 300px;
+}
+
+label{
+    float: left;
+	clear: both;
+	padding: 5px;
+}
+input {
+  float: right;
+}
+
+select {
+	float: right;
+}
+
+.tha-main {
+	width: 960px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+
+.col-666 {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+button {
+   background: #00746b;
+   padding: 13.5px 27px;
+   border-radius: 5px;
+   color: white;
+   font-size: 17px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   position: inline; 
+   left: 820px;
+
+   }
+button:hover {
+   border-top-color: #3e7d68;
+   background: #3e7d68;
+   color: #ccc;
+   }
+button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }

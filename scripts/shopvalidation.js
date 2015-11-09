@@ -7,27 +7,27 @@ function formValidation()
 	var adresse = document.forms["shirtform"]["adresse"].value;
 	var tshirt = document.forms["shirtform"]["t-shirt1"].value;
     if(fnavn.length === 0) {
-        alert("Vennligst skriv inn fornavnet ditt");
+        alert("Please enter your first name");
         return false;
     }
 	else if (enavn.length === 0) {
-		alert("Vennligst skriv inn etternavnet ditt");
+		alert("Please enter your last name");
 		return false;
 	}
 	else if (mail.length === 0) {
-		alert("Vennligst skriv inn en mail");
+		alert("Please enter a valig mail");
 		return false;
 	}
 	else if(telefon.length === 0) {
-		alert("Du har ikke skrevet inn et gyldig telefonnummer");
+		alert("Please enter a valid phone number");
 		return false;
 	}
 	else if(adresse.length === 0) {
-		alert("Skriv inn en adresse");
+		alert("Please write an address");
 		return false; 
 	}
 	else if(tshirt.length === 0) {
-		alert("Du må skrive inn ID-koden til din T-skjorte")
+		alert("You have to write the ID-code for your T-Shirt")
 		return false
 	}
 	else {

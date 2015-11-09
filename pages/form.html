@@ -3,7 +3,6 @@
 <head>
 	<title>Form</title>
 	<link href="../style/style.css" rel="stylesheet">
-	<link href="../style/CSStilShopogForm.css" rel="stylesheet">
 	<script type="text/javascript" src="../scripts/shopvalidation.js"></script>
 	<script type="text/javascript" src="../scripts/header_footer.js"></script>
 </head>
@@ -13,10 +12,10 @@
 		<div class="form">
 			<form name="shirtform" id="buy_shirt" action="mailto:embrikeinang@msn.com" method="POST" onsubmit="return formValidation()">
 				<fieldset>
-					<legend> T-skjorte </legend>
-						<p> Velg ønsket t-skjorte og skriv inn artikkelkoden: </p>
+					<legend> T-shirt</legend>
+						<p> Please enter the ID-number for your T-shirt: </p>
 						<div id="t-shirts-list">
-							<p><label for="shirt-1">T-skjorte Nr.1:</label><input id="shirt1" type="text" name="t-shirt1" size="20"/>
+							<p><label for="shirt-1">T-shirt Nr.1:</label><input id="shirt1" type="text" name="t-shirt1" size="20"/>
 							<select name="Størrelse" id="størrelse" name="størrelse">
 							<option name="shirt1" value="S">S</option>
 							<option name="shirt1" value="M">M</option>
@@ -24,7 +23,7 @@
 							<option name="shirt1" value="XL">XL</option>
 							</select>
 							</p>
-							<p><label for="shirt-2">T-skjorte Nr.2:</label><input id="shirt2" type="text" name="t-shirt2" size="20"/>
+							<p><label for="shirt-2">T-shirt Nr.2:</label><input id="shirt2" type="text" name="t-shirt2" size="20"/>
 							<select name="Størrelse" id="størrelse" name="størrelse">
 							<option name="shirt2" value="S">S</option>
 							<option name="shirt2" value="M">M</option>
@@ -32,7 +31,7 @@
 							<option name="shirt2" value="XL">XL</option>
 							</select>
 							</p>
-							<p><label for="shirt-3">T-skjorte Nr.3:</label><input id="shirt3" type="text" name="t-shirt3" size="20"/>
+							<p><label for="shirt-3">T-shirt Nr.3:</label><input id="shirt3" type="text" name="t-shirt3" size="20"/>
 							<select name="Størrelse" id="størrelse" name="størrelse">
 							<option name="shirt3" value="S">S</option>
 							<option name="shirt3" value="M">M</option>
@@ -40,7 +39,7 @@
 							<option name="shirt3" value="XL">XL</option>
 							</select>
 							</p>
-							<p><label for="shirt-4">T-skjorte Nr.4:</label><input id="shirt4" type="text" name="t-shirt4" size="20"/>
+							<p><label for="shirt-4">T-shirt Nr.4:</label><input id="shirt4" type="text" name="t-shirt4" size="20"/>
 							<select name="Størrelse" id="størrelse" name="størrelse">
 							<option name="shirt4" value="S">S</option>
 							<option name="shirt4" value="M">M</option>
@@ -50,15 +49,15 @@
 							</p>
 						</div>
 				</fieldset>
-				<em> Viktig: Grunnet stor etterspørsel er det et begrenset utvalg på 4 T-skjorter per kunde. Ved spesielle ordrer ta kontakt via mail <a href="contact-us.html">her.</a> </em>
+				<em> Due to high demand it's only possible to buy 4 shirts per person. If you have a request, please contact us <a href="contact.html">here.</a> </em>
 				<fieldset>
-					<legend> Kontaktinformasjon </legend>
-					<p><label for="fornavn">Fornavn:</label><input id="fornavn" type="text" name="fornavn" size="15"/></p>
-					<p><label for="etternavn">Etternavn:</label><input id="etternavn" type="text" name="etternavn" size="15"/></p>
+					<legend> Contact information </legend>
+					<p><label for="fornavn">First name:</label><input id="fornavn" type="text" name="fornavn" size="15"/></p>
+					<p><label for="etternavn">Last name:</label><input id="etternavn" type="text" name="etternavn" size="15"/></p>
 					<p><label for="email">Email:</label><input id="email" type="email" name="mail" size="15"/></p>
-					<p><label for="telefon">Telefon:</label><input id="telefon" type="tel" name="telefon" size="15"/></p>
-					<p><label for="adresse">Adresse:</label><input id="adresse" type="text" name="addresse" size="15"/></p>
-					<p><label for="land">Land:</label><select id="countries" name="countries">
+					<p><label for="telefon">Phone:</label><input id="telefon" type="tel" name="telefon" size="15"/></p>
+					<p><label for="adresse">Address:</label><input id="adresse" type="text" name="addresse" size="15"/></p>
+					<p><label for="land">Country:</label><select id="countries" name="countries">
 					<option value="AF">Afghanistan</option>
 					<option value="AX">Åland Islands</option>
 					<option value="AL">Albania</option>
@@ -306,11 +305,11 @@
 					</select>
 				</fieldset>
 				<fieldset>
-					<legend>Kommentar: </legend>
+					<legend>Comment: </legend>
 						<label for="kommentar"></label>
-							<textarea placeholder="Vennligst skriv inn din kommentar her:" rows="5" id="kommentar" cols="40" name="comments" form="buy_shirt"></textarea>				
+							<textarea placeholder="Please input your comment here:" rows="5" id="kommentar" cols="40" name="comments" form="buy_shirt"></textarea>				
 				</fieldset>
-				<p><input type="submit" value="Bestill"/></p>
+				<button type="submit "class="knapp" type="button">ORDER</button>
 			</form>
 		</div>
 	</div>
