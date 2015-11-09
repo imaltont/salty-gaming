@@ -326,13 +326,49 @@ ul{
 	color: #000;
 }
 
-.player_image{
+.team-image{
 	width: 225px;
 	height: 500px;
 }
 
 /* PLAYER PAGE */
-/* player page specific css goes here */
+#player_page #achievements h2{
+	padding-bottom: 10px;
+}
+
+#player_page #achievements ul{
+	padding-bottom: 20px;
+}
+
+#player_page #player_portrait{
+	padding-top: 10px;
+	height: 300px;
+	width: auto
+}
+
+#player_page #sidebar a img{
+	height: 150px;
+}
+
+#player_page table, tr, td{
+	padding-right: 15px;
+}
+
+#player_quote{
+	padding: 20px 0px 20px 0px;
+	font-style:italic;
+}
+
+.player{
+	text-align: center;
+	margin: 5px;
+	border: solid;
+}
+
+.player_image{
+	width: 200px;
+	height: auto;
+}
 
 /* SPONSORS PAGE */
 .contentBox {
