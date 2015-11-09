@@ -4,10 +4,14 @@
 	padding: 0px;
 }
 
+<<<<<<< HEAD
 em a {
 	color: black;
 }
 
+=======
+/* FONTS */
+>>>>>>> a57acd498e18695e738b889d9134f5141f133c50
 @font-face {
 	font-family: LatoBlack;
 	src: url("fonts/Lato-Black.ttf");
@@ -23,13 +27,11 @@ em a {
 	src: url("fonts/OpenSans-Regular.ttf");
 }
 
+/* FONT SPECIFICATION */
 body {
 	font-family: LatoBlack;
 	font-weight: 900;
 }
-
-/* FONTS */
-
 
 h1, h2, h3, h4, h5, h6, a {
 	text-transform: uppercase;
@@ -61,12 +63,17 @@ h4 {
 }
 h5 {
 	font-size: 30px;
-	font-weight: 400;
+	font-family: OpenSans;
 	margin: 20px 0;
 }
 
+/* GENERAL */
 .top {
 	padding-top: 30px;
+}
+
+.hide {
+	display: none;
 }
 
 /* MAIN STRUCTURE AND FLEX */
@@ -76,27 +83,41 @@ h5 {
 }
 
 .flex {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .center {
-	justify-content: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .space-around {
-	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 }
 
 .space-between {
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .vertical-center {
-	align-items: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .flex-wrap {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 
 /* COLUMNS */
@@ -123,6 +144,23 @@ h5 {
 }
 
 /* MEDIA QUERIES */ 
+@media only screen and (max-device-width: 960px) {
+	.flex {
+		display: block;
+	}
+	.col-1 {
+		width: 100%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 33%;
+	}
+	.col-25 {
+		width: 50%;
+	}
+}
 @media (max-width: 960px) {
 	.flex {
 		display: block;
@@ -139,6 +177,7 @@ h5 {
 	.col-25 {
 		width: 50%;
 	}
+
 }
 @media (max-width: 740px) {
 
@@ -392,7 +431,7 @@ ul{
 	height: auto;
 }
 
-/* SPONSORS PAGE */
+/* SPONSORS AND CONTACT PAGE */
 .contentBox {
 	margin: 50px 0;
 }
@@ -418,9 +457,8 @@ ul{
 	background-position: 10px;
 }
 
-/* CONTACT PAGE */
-
 /* SHOP PAGE */
+<<<<<<< HEAD
 /* shop page specific css goes here */
 
 
@@ -500,3 +538,6 @@ button:active {
    border-top-color: #1b435e;
    background: #1b435e;
    }
+=======
+
+>>>>>>> a57acd498e18695e738b889d9134f5141f133c50
