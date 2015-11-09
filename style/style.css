@@ -346,3 +346,11 @@ body {
 		max-width: 100%;
 	}
 }
+
+/*Style for dropdown article javascript*/
+.toggleButton{
+		cursor:pointer;
+	}
+	.slider{
+		display:none;
+	}
