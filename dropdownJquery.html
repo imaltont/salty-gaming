@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	.toggleButton{
+		cursor:pointer;
+	}
+	.slider{
+		display:none;
+	}
+
+	
+	}
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		$('.toggleButton').click(function(e){
+			$(this).next().slideToggle();
+			var sign=$(this).children(':first');
+			
+			
+		});
+	});
+</script>
+</head>
+<body>
+
+
+<h2>Lorem ipsum</h2>
+<div class="toggleButton">
+	<span class="toggleSign"></span>Lorem ipsum dolor sit amet, velit ridiculus, sodales<br>
+</div>
+<div class="slider">
+	 vestibulum fringilla ad odio integer, a suspendisse in bibendum<br> mollis velit. Mi fringilla id adipiscing laboris, suscipit lorem, <br>eu nibh velit vel donec et, vivamus ipsum interdum, et ipsum.<br> Malesuada vel quis sollicitudin pellentesque arcu, amet leo, aenean<br> elementum rhoncus amet in est ullamcorper, neque non maecenas<br> pellentesque amet. Et porta suscipit ante, mi nec dictum fusce<br> quisque. Eros orci, faucibus tincidunt ac sit magna, a a, imperdiet<br> elementum tristique mauris volutpat suscipit. Nibh habitasse<br> volutpat ut ac natoque, purus amet in per dui donec. A a aliquam<br> vitae lectus odio, metus magna rutrum a suspendisse vero cras, est<br> et facilisis, pede quam pellentesque tincidunt id amet arcu. Luctus<br> sit, ut metus morbi ut lacus, vivamus sed ornare non id odio <br>aliquam, mi luctus diam nisl at, metus praesent vestibulum <br>vestibulum ante. Nec nam suspendisse aliquam sed nullam diam.<br>
+</div>
+<br><br><br>
+<h2>Dolor sit</h2>
+<div class="toggleButton">
+	<span class="toggleSign"></span>Toggler Two
+</div>
+
+<div class="slider">
+	Lorem ipsum dolor sit amet, velit ridiculus, sodales<br> vestibulum fringilla ad odio integer, a suspendisse in bibendum<br> mollis velit. Mi fringilla id adipiscing laboris, suscipit lorem, <br>eu nibh velit vel donec et, vivamus ipsum interdum, et ipsum.<br> Malesuada vel quis sollicitudin pellentesque arcu, amet leo, aenean<br> elementum rhoncus amet in est ullamcorper, neque non maecenas<br> pellentesque amet. Et porta suscipit ante, mi nec dictum fusce<br> quisque. Eros orci, faucibus tincidunt ac sit magna, a a, imperdiet<br> elementum tristique mauris volutpat suscipit. Nibh habitasse<br> volutpat ut ac natoque, purus amet in per dui donec. A a aliquam<br> vitae lectus odio, metus magna rutrum a suspendisse vero cras, est<br> et facilisis, pede quam pellentesque tincidunt id amet arcu. Luctus<br> sit, ut metus morbi ut lacus, vivamus sed ornare non id odio <br>aliquam, mi luctus diam nisl at, metus praesent vestibulum <br>vestibulum ante. Nec nam suspendisse aliquam sed nullam diam.<br>
+</div>
+
+
+</body>
