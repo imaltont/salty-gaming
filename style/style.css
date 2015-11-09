@@ -4,16 +4,33 @@
 	padding: 0px;
 }
 
+@font-face {
+	font-family: LatoBlack;
+	src: url("fonts/Lato-Black.ttf");
+}
+
+@font-face {
+	font-family: Lato;
+	src: url("fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("fonts/OpenSans-Regular.ttf");
+}
+
 body {
-	font-family: "Lato";
+	font-family: LatoBlack;
 	font-weight: 900;
 }
 
 /* FONTS */
+
+
 h1, h2, h3, h4, h5, h6, a {
 	text-transform: uppercase;
 	letter-spacing: -1px;
-	font-family: "Lato";
+	font-family: LatoBlack;
 	color: #ffffff;
 }
 
@@ -22,7 +39,7 @@ h1, h2, h3 {
 }
 
 div, p, a {
-	font-family: "Open Sans";
+	font-family: OpenSans;
 	font-size: 15px;
 }
 
@@ -184,6 +201,7 @@ nav a:hover, .social a:hover{
 	color: #ffffff;
 	background: #00a995;
 	text-align: left;
+	letter-spacing: -1px;
 }
 
 #sidebar h4{
