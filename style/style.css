@@ -165,12 +165,17 @@ nav a {
 }
 
 nav a:hover, .social a:hover{
-	background: #00a995;
+	color: #00a995;
 }
 
 .social {
 	float: right;
 	text-align: right;
+}
+.social img {
+	height: 25px; 
+	width: 25px;
+	margin-left: 10px;
 }
 
 /* SIDEBAR */
@@ -195,7 +200,7 @@ nav a:hover, .social a:hover{
 }
 
 #sidebar a:hover {
-	background: #00746b;
+	color: #00746b;
 }
 
 #sidebar p {
@@ -216,10 +221,6 @@ footer{
 footer div{
 	color: #fff;
 	font-size: 12px;
-}
-
-footer div a{
-	margin-left: 10px;
 }
 
 footer img {
@@ -334,14 +335,6 @@ ul{
 /* player page specific css goes here */
 
 /* SPONSORS PAGE */
-body {
-	/*background-image: linear-gradient(to bottom, white, white 50%, #b5dad7  50%);
-		background-attachment: fixed;
-		background-repeat: no-repeat;*/
-	font-family: Lato;
-	font-weight: 900;
-}
-
 .contentBox {
 	margin: 50px 0;
 }

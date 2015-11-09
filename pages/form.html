@@ -4,8 +4,8 @@
 	<title>Form</title>
 	<link href="../style/style.css" rel="stylesheet">
 	<link href="../style/CSStilShopogForm.css" rel="stylesheet">
-	<script type="text/javascript" src="formValidation.js"></script>
-		<script type="text/javascript" src="../scripts/header_footer.js"></script>
+	<script type="text/javascript" src="../scripts/shopvalidation.js"></script>
+	<script type="text/javascript" src="../scripts/header_footer.js"></script>
 </head>
 <body>
 	<header id="page_header"></header>
@@ -16,10 +16,38 @@
 					<legend> T-skjorte </legend>
 						<p> Velg ønsket t-skjorte og skriv inn artikkelkoden: </p>
 						<div id="t-shirts-list">
-							<p><label for="shirt-1">T-skjorte Nr.1:</label><input id="shirt1" type="text" name="t-shirt1" size="20"/></p>
-							<p><label for="shirt-2">T-skjorte Nr.2:</label><input id="shirt2" type="text" name="t-shirt2" size="20"/></p>
-							<p><label for="shirt-3">T-skjorte Nr.3:</label><input id="shirt3" type="text" name="t-shirt3" size="20"/></p>
-							<p><label for="shirt-4">T-skjorte Nr.4:</label><input id="shirt4" type="text" name="t-shirt4" size="20"/></p>
+							<p><label for="shirt-1">T-skjorte Nr.1:</label><input id="shirt1" type="text" name="t-shirt1" size="20"/>
+							<select name="Størrelse" id="størrelse" name="størrelse">
+							<option name="shirt1" value="S">S</option>
+							<option name="shirt1" value="M">M</option>
+							<option name="shirt1" value="L">L</option>
+							<option name="shirt1" value="XL">XL</option>
+							</select>
+							</p>
+							<p><label for="shirt-2">T-skjorte Nr.2:</label><input id="shirt2" type="text" name="t-shirt2" size="20"/>
+							<select name="Størrelse" id="størrelse" name="størrelse">
+							<option name="shirt2" value="S">S</option>
+							<option name="shirt2" value="M">M</option>
+							<option name="shirt2" value="L">L</option>
+							<option name="shirt2" value="XL">XL</option>
+							</select>
+							</p>
+							<p><label for="shirt-3">T-skjorte Nr.3:</label><input id="shirt3" type="text" name="t-shirt3" size="20"/>
+							<select name="Størrelse" id="størrelse" name="størrelse">
+							<option name="shirt3" value="S">S</option>
+							<option name="shirt3" value="M">M</option>
+							<option name="shirt3" value="L">L</option>
+							<option name="shirt3" value="XL">XL</option>
+							</select>
+							</p>
+							<p><label for="shirt-4">T-skjorte Nr.4:</label><input id="shirt4" type="text" name="t-shirt4" size="20"/>
+							<select name="Størrelse" id="størrelse" name="størrelse">
+							<option name="shirt4" value="S">S</option>
+							<option name="shirt4" value="M">M</option>
+							<option name="shirt4" value="L">L</option>
+							<option name="shirt4" value="XL">XL</option>
+							</select>
+							</p>
 						</div>
 				</fieldset>
 				<em> Viktig: Grunnet stor etterspørsel er det et begrenset utvalg på 4 T-skjorter per kunde. Ved spesielle ordrer ta kontakt via mail <a href="contact-us.html">her.</a> </em>
