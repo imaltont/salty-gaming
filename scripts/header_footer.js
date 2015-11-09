@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	//Footer for all main pages
 	if (elements.footer){
 		var f_div = document.createElement("div");
-		f_div.className = "flex container";
+		f_div.className = "flex container vertical-center";
 		f_div.innerHTML = "<div class=\"col-3\" style=\"text-align: left;\">Copyright 2015|All Rights Reserved</div><div class=\"col-3\" style=\"text-align: center;\"><img src=\"../images/small_logo.png\"></div><div class=\"social col-3\"><a href=\"\">FB</a><a href=\"\">TW</a><a href=\"\">YT</a></div>";
 		elements.footer.appendChild(f_div);
 		}
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	//Footer for all player pages
 	if (elements.player_footer){
 		var p_f_div = document.createElement("div");
-		p_f_div.className = "flex container";
+		p_f_div.className = "flex container vertical-center";
 		p_f_div.innerHTML = "<div class=\"col-3\" style=\"text-align: left;\">Copyright 2015|All Rights Reserved</div><div class=\"col-3\" style=\"text-align: center;\"><img src=\"../../images/small_logo.png\"></div><div class=\"social col-3\"><a href=\"\">FB</a><a href=\"\">TW</a><a href=\"\">YT</a></div>";
 		elements.player_footer.appendChild(p_f_div);
 	}

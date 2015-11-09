@@ -73,12 +73,10 @@ h5 {
 .vertical-center {
 	align-items: center;
 }
-
 .flex-wrap {
 	display: flex;
 	flex-wrap: wrap;
 }
-
 
 /* COLUMNS */
 .col-1 {
@@ -90,7 +88,7 @@ h5 {
 	background: #00a995;
 }
 .col-3 {
-	width: 360px;
+	width: 320px;
 }
 
 .col-100 {
@@ -101,6 +99,36 @@ h5 {
 .col-25 {
 	max-width: 25%;
 	background: pink;
+}
+
+/* MEDIA QUERIES */ 
+@media (max-width: 960px) {
+	.flex {
+		display: block;
+	}
+	.col-1 {
+		width: 100%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 33%;
+	}
+	.col-25 {
+		width: 50%;
+	}
+}
+@media (max-width: 740px) {
+
+}
+@media (max-width: 480px) {
+	.col-3 {
+		width: 100%;
+	}
+	.col-25 {
+		max-width: 100%;
+	}
 }
 
 /* HEAD */
@@ -161,9 +189,13 @@ nav a:hover, .social a:hover{
 
 #sidebar a{
 	text-decoration: none;
-	color: #ffffff;
+	color: #fff;
 	font-size: 20px;
 	font-weight: 400;
+}
+
+#sidebar a:hover {
+	background: #00746b;
 }
 
 #sidebar p {
@@ -176,20 +208,23 @@ nav a:hover, .social a:hover{
 footer{
 	padding-top: 10px;
 	width: 100%;
-	height: 30px;
-	clear:both;
-	float: bottom;
+	height: 60px;
 	font-size: 12px;
 	background: #00746b;
 }
 
 footer div{
-	color: #ffffff;
+	color: #fff;
 	font-size: 12px;
 }
 
 footer div a{
-	margin-left: 5px;
+	margin-left: 10px;
+}
+
+footer img {
+	width: 50px;
+	height: 50px;
 }
 
 /*SIDEBAR BUTTONS*/
@@ -252,6 +287,9 @@ footer div a{
 	margin: 10px 0;
 }
 
+.article h3 {
+	text-align: right;
+}
 
 /* ABOUT PAGE */
 ul{
@@ -333,30 +371,3 @@ body {
 
 /* SHOP PAGE */
 /* shop page specific css goes here */
-
-/* MEDIA QUERIES */ 
-@media (max-width: 960px) {
-	.flex {
-		display: block;
-	}
-
-	.col-1 {
-		width: 100%;
-	}
-	.col-2 {
-		width: 100%;
-	}
-	.col-3 {
-		width: 100%;
-	}
-
-	.col-25 {
-		width: 50%;
-	}
-}
-
-@media (max-width: 480px) {
-	.col-25 {
-		max-width: 100%;
-	}
-}
