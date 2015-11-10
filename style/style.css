@@ -236,6 +236,13 @@ nav a:hover, .social a:hover{
 	margin-left: 10px;
 }
 
+.nav_structure a{
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	text-decoration: inherit;
+}
+
 /* SIDEBAR */
 #sidebar {
 	text-transform: uppercase;
@@ -376,6 +383,11 @@ ul{
 }
 .games_button:hover {
 	background: #1c1c1c;
+}
+
+.games_button img{
+	width: 250px;
+	height: 100px;
 }
 
 .player{
