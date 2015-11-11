@@ -9,17 +9,24 @@ document.addEventListener("DOMContentLoaded", function(event){
 		hs_b: document.getElementById("hs_b"),
 	}
 
-	elements.page.innerHTML = "";
+	while (elements.page.hasChildNodes()){
+		elements.page.removeChild(elements.page.lastChild);
+	}
 	elements.page.appendChild(elements.player1);
 	elements.page.appendChild(elements.player2);
 	
 	elements.sc2_b.addEventListener("click", function(event){
-		elements.page.innerHTML = "";
+		while (elements.page.hasChildNodes()){
+			elements.page.removeChild(elements.page.lastChild);
+		}
+	
 		elements.page.appendChild(elements.player1);
 		elements.page.appendChild(elements.player2);
 	});
 	elements.hs_b.addEventListener("click", function(event){
-		elements.page.innerHTML = "";
+		while (elements.page.hasChildNodes()){
+			elements.page.removeChild(elements.page.lastChild);
+		}
 		elements.page.appendChild(elements.player3);
 		elements.page.appendChild(elements.player4);
 	});
