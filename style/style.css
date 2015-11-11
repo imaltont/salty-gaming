@@ -28,6 +28,7 @@ em a {
 body {
 	font-family: LatoBlack;
 	font-weight: 900;
+	min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, a {
@@ -65,6 +66,8 @@ h5 {
 }
 
 /* GENERAL */
+
+
 .top {
 	padding-top: 30px;
 }
@@ -144,50 +147,6 @@ h5 {
 	background: pink;
 }
 
-/* MEDIA QUERIES */ 
-@media only screen and (max-device-width: 960px) {
-	.flex {
-		display: block;
-	}
-	.col-1 {
-		width: 100%;
-	}
-	.col-2 {
-		width: 100%;
-	}
-	.col-3 {
-		width: 33%;
-	}
-	.col-25 {
-		width: 50%;
-	}
-}
-@media (max-width: 960px) {
-	.flex {
-		display: block;
-	}
-	.col-1 {
-		width: 100%;
-	}
-	.col-2 {
-		width: 100%;
-	}
-	.col-3 {
-		width: 33%;
-	}
-	.col-25 {
-		width: 50%;
-	}
-}
-
-@media (max-width: 480px) {
-	.col-3 {
-		width: 100%;
-	}
-	.col-25 {
-		max-width: 100%;
-	}
-}
 
 /* HEAD */
 .blue {
@@ -250,6 +209,7 @@ nav a:hover, .social a:hover{
 	background: #00a995;
 	text-align: left;
 	letter-spacing: -1px;
+	min-height: 100vh;
 }
 
 #sidebar h4{
@@ -345,12 +305,12 @@ footer img {
 
 /* NEWS ARTICLES */
 .article {
-	width: 680px;
+	width: 95%;
 	margin-bottom: 30px;
 }
 
 .article img {
-	width: 680px;
+	width: 100%;
 	margin: 10px 0;
 }
 
@@ -500,7 +460,6 @@ input, select {
   	float: right;
 }
 
-
 /* */
 button {
    background: #00746b;
@@ -519,4 +478,53 @@ button:hover {
 button:active {
    border-top-color: #1b435e;
    background: #1b435e;
+}
+
+/* MEDIA QUERIES */ 
+@media only screen and (max-device-width: 960px) {
+	.flex {
+		display: block;
+	}
+	.col-1 {
+		width: 100%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 33%;
+	}
+	.col-25 {
+		width: 50%;
+	}
+}
+@media (max-width: 960px) {
+	.flex {
+		display: block;
+	}
+	.col-1 {
+		width: 100%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 33%;
+	}
+	.col-25 {
+		width: 50%;
+	}
+	#sidebar {
+		min-height: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.col-3 {
+		width: 100%;
+	}
+	.col-25 {
+		max-width: 100%;
+	}
+
 }
