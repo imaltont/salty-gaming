@@ -230,10 +230,6 @@ nav a:hover, .social a:hover{
 	font-weight: 400;
 }
 
-#sidebar a:hover {
-	color: #00746b;
-}
-
 #sidebar p {
 	padding: 10px 10px;
 	font-size: 20px;
@@ -322,11 +318,18 @@ footer .social {
 
 .article h3 {
 	text-align: right;
+	padding-top: 10px;
 }
 
 .article a {
 	color: black;
+}
 
+.readmore {
+	cursor: pointer;
+}
+.readmore:hover {
+	color: rgba(0,116,107,0.8);
 }
 
 /* ABOUT PAGE */
