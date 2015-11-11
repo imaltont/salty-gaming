@@ -24,6 +24,9 @@ TESTING:
 	TESTING AV HELE SIDEN
 	Form er ferdig http://goo.gl/forms/WBXuYN6XLA
 CHANGES.HTML Done(?)
-KOMMENTERE KODE
+KOMMENTERE KODE (Ferdig med shopvalidation.js, form, shop og contact us.)
+
+Legge til TAB-bildet DONE
+
 
 
