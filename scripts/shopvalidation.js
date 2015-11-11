@@ -1,3 +1,5 @@
+// A function to check if anything is intered in the form. Check if the length og the information is longer than 0 and alerts the user if nothing is intered 
+
 function formValidation()
 {
     var fnavn = document.forms["shirtform"]["fornavn"].value;
