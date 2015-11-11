@@ -26,7 +26,7 @@ em a {
 
 /* FONT SPECIFICATION */
 body {
-	font-family: LatoBlack;
+	font-family: LatoBlack, sans-serif;
 	font-weight: 900;
 	min-height: 100vh;
 }
@@ -34,7 +34,7 @@ body {
 h1, h2, h3, h4, h5, h6, a {
 	text-transform: uppercase;
 	letter-spacing: -1px;
-	font-family: LatoBlack;
+	font-family: LatoBlack, sans-serif;
 	color: #ffffff;
 }
 
@@ -43,7 +43,7 @@ h1, h2, h3 {
 }
 
 div, p, a {
-	font-family: OpenSans;
+	font-family: OpenSans, sans-serif;
 	font-size: 15px;
 }
 
@@ -58,16 +58,15 @@ h3 {
 }
 h4 {
 	font-size: 20px;
+	margin-top: 30px;
 }
 h5 {
 	font-size: 30px;
-	font-family: OpenSans;
+	font-family: OpenSans, sans-serif;
 	margin: 20px 0;
 }
 
 /* GENERAL */
-
-
 .top {
 	padding-top: 30px;
 }
@@ -88,6 +87,21 @@ h5 {
 }
 
 .flex {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flex-wrap {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+
+.flex-footer {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -116,14 +130,6 @@ h5 {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-.flex-wrap {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-}
 
 /* COLUMNS */
 .col-1 {
@@ -141,12 +147,9 @@ h5 {
 .col-100 {
 	width: 100%;
 }
-
-.col-25 {
-	width: 25%;
-	background: pink;
+.col-50 {
+	width: 50%;
 }
-
 
 /* HEAD */
 .blue {
@@ -160,7 +163,8 @@ h5 {
 /* HEADER */
 header {
 	background: #00746b;
-	height: 120px;
+	min-height: 100px;
+	padding-bottom: 20px;
 }
 
 #logo {
@@ -170,7 +174,7 @@ header {
 }
 
 nav {
-	padding-top: 30px;
+	padding-top: 10px;
 	letter-spacing: -1px;
 }
 nav a {
@@ -186,9 +190,10 @@ nav a:hover, .social a:hover{
 }
 
 .social {
-	float: right;
 	text-align: right;
+	padding-top: 30px;
 }
+
 .social img {
 	height: 25px; 
 	width: 25px;
@@ -239,19 +244,20 @@ nav a:hover, .social a:hover{
 footer{
 	padding-top: 10px;
 	width: 100%;
-	height: 60px;
+	min-height: 60px;
 	font-size: 12px;
 	background: #00746b;
 }
-
 footer div{
 	color: #fff;
 	font-size: 12px;
 }
-
 footer img {
 	width: 50px;
 	height: 50px;
+}
+footer .social {
+	padding-top: 0px;
 }
 
 /*SIDEBAR BUTTONS*/
@@ -325,7 +331,6 @@ ul{
 
 /*TEAM PAGE */
 #game_chooser {
-	width: 100%;
 	background-color: #282828;
 }
 
@@ -335,12 +340,11 @@ ul{
 }
 
 .games_button {
-	width: 50%;
 	text-align: center;
 	cursor: pointer;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px 0;
 }
+
 .games_button:hover {
 	background: #1c1c1c;
 }
@@ -358,8 +362,8 @@ ul{
 }
 
 .team-image{
-	width: 225px;
-	height: 500px;
+	width: 100%;
+	height: 550px;
 }
 
 /* PLAYER PAGE */
@@ -438,7 +442,6 @@ ul{
 .shop-item img {
 	width: 270px;
 	height: 300px;
-	
 }
 
 /* ORDER PAGE */
@@ -494,9 +497,6 @@ button:active {
 	.col-3 {
 		width: 33%;
 	}
-	.col-25 {
-		width: 50%;
-	}
 }
 @media (max-width: 960px) {
 	.flex {
@@ -511,20 +511,30 @@ button:active {
 	.col-3 {
 		width: 33%;
 	}
-	.col-25 {
-		width: 50%;
-	}
+
 	#sidebar {
 		min-height: 100%;
+	}
+	.social {
+		float: left;
+		padding-top: 15px;
+	}
+	nav {
+		clear: both;
 	}
 }
 
 @media (max-width: 480px) {
+	.flex-wrap {
+		display: block;
+	}
 	.col-3 {
 		width: 100%;
 	}
-	.col-25 {
-		max-width: 100%;
+	.col-50 {
+		width: 100%;
 	}
-
+	nav a {
+		display: block;
+	}
 }
