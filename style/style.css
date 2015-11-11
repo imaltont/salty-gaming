@@ -358,6 +358,11 @@ footer img {
 	text-align: right;
 }
 
+.article a {
+	color: black;
+
+}
+
 /* ABOUT PAGE */
 ul{
 	padding-left: 3em;
