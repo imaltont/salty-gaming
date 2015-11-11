@@ -13,9 +13,11 @@
 	</div>
 	<div class="flex container center">
 		<div class="col-100">
+		<!--Sender med POST og legger informasjonen inn i en mail som kunden kan sende til oss-->
 			<form name="shirtform" id="buy_shirt" action="mailto:embrikeinang@msn.com" method="POST" onsubmit="return formValidation()">
 				<fieldset>
 					<legend> T-shirt</legend>
+					<!--Navngir alle t-skjortene med egen kode-->
 						<p> Please enter the ID-number for your T-shirt: </p>
 						<div id="t-shirts-list">
 							<p><label for="shirt-1">T-shirt Nr.1:</label><input id="shirt1" type="text" name="t-shirt1" size="20"/>
@@ -54,6 +56,7 @@
 				</fieldset>
 				<em> Due to high demand it's only possible to buy 4 shirts per person. If you have a request, please <a href="contact.html">contact us</a></em>
 				<fieldset>
+				<!--Liste med land for å holde oversikt over shipping-->
 					<legend> Contact information </legend>
 					<p><label for="fornavn">First name:</label><input id="fornavn" type="text" name="fornavn" size="15"/></p>
 					<p><label for="etternavn">Last name:</label><input id="etternavn" type="text" name="etternavn" size="15"/></p>
@@ -313,6 +316,7 @@
 							<textarea placeholder="Please input your comment here:" rows="5" id="kommentar" cols="40" name="comments" form="buy_shirt"></textarea>				
 				</fieldset>
 				<div class="top">
+				<!--Trykke på knappen for å legge informasjonen i mail og så at kunden sender til oss-->
 					<button type="submit "class="margin-center" type="button">ORDER</button>
 				</div>
 			</form>
