@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	elements.page.innerHTML = "";
 	elements.page.appendChild(elements.player1);
 	elements.page.appendChild(elements.player2);
-
+	
 	elements.sc2_b.addEventListener("click", function(event){
 		elements.page.innerHTML = "";
 		elements.page.appendChild(elements.player1);
@@ -23,4 +23,5 @@ document.addEventListener("DOMContentLoaded", function(event){
 		elements.page.appendChild(elements.player3);
 		elements.page.appendChild(elements.player4);
 	});
+
 })
