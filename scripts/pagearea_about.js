@@ -9,19 +9,27 @@ document.addEventListener("DOMContentLoaded", function(event){
 		goal_b: document.getElementById("goals_b")
 	}
 
-	elements.page.innerHTML = "";
+	while (elements.page.hasChildNodes()){
+		elements.page.removeChild(elements.page.lastChild);
+	}
 	elements.page.appendChild(elements.hist);
 
 	elements.hist_b.addEventListener("click", function(event){
-		elements.page.innerHTML = "";
+		while (elements.page.hasChildNodes()){
+			elements.page.removeChild(elements.page.lastChild);
+		}
 		elements.page.appendChild(elements.hist);
 	});
 	elements.achi_b.addEventListener("click", function(event){
-		elements.page.innerHTML = "";
+		while (elements.page.hasChildNodes()){
+			elements.page.removeChild(elements.page.lastChild);
+		}
 		elements.page.appendChild(elements.achi);
 	});
 	elements.goal_b.addEventListener("click", function(event){
-		elements.page.innerHTML = "";
+		while (elements.page.hasChildNodes()){
+			elements.page.removeChild(elements.page.lastChild);
+		}
 		elements.page.appendChild(elements.goal);
 	});
 })
