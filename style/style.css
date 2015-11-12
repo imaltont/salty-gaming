@@ -166,28 +166,50 @@ header {
 	min-height: 100px;
 	padding-bottom: 20px;
 }
-
+.transparent {
+	background: rgba(0,116,107,0.5);
+}
 #logo {
 	padding-top: 20px;
 	max-height: 80px;
 	max-width: auto;
 }
-
 nav {
 	padding-top: 10px;
 	letter-spacing: -1px;
+}
+nav li {
+	display: inline-block;
+	position: relative;
 }
 nav a {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 20px;
 	margin-left: 10px;
-	color: #ffffff;
+	color: #fff;
 }
-
 nav a:hover, .social a:hover{
 	color: #00a995;
 }
+
+/*DROPDOWN*/
+.dropdown {
+	position: absolute;
+	visibility: hidden;
+}
+.dropdown a {
+	margin: 5px;
+}
+nav li:hover .dropdown {
+	visibility: visible;
+	padding: 3px;
+	background: rgba(0,116,107,1);
+}
+nav li:hover .transparent {
+	background: rgba(0,116,107,0.5);
+}
+/*END DROPDOWN */
 
 .social {
 	text-align: right;
@@ -265,10 +287,7 @@ footer .social {
 }
 
 /* FRONT PAGE */
-/*FEATURED AND HEADER*/
-.transparent {
-	background: rgba(0,116,107,0.5);
-}
+/*FEATURED*/
 .featured {
 	background: url("../images/featured-bw.jpg");
 	height: 500px;
