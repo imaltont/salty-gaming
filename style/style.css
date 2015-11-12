@@ -291,7 +291,7 @@ footer .social {
 /* FRONT PAGE */
 /*FEATURED*/
 .featured {
-	background: url("../images/featured-bw.jpg");
+	background: url("../images/featured-bw.jpg") center center;
 	height: 500px;
 	position: relative;
 	background-size: cover;
