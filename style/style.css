@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6, a {
 	letter-spacing: -1px;
 	font-family: LatoBlack, sans-serif;
 	color: #ffffff;
+	text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -178,13 +179,15 @@ nav {
 	padding-top: 10px;
 	letter-spacing: -1px;
 }
+nav ul {
+	padding: 0;
+}
 nav li {
 	display: inline-block;
 	position: relative;
 }
 nav a {
 	text-transform: uppercase;
-	text-decoration: none;
 	font-size: 20px;
 	margin-left: 10px;
 	color: #fff;
@@ -246,7 +249,6 @@ nav li:hover .transparent {
 }
 
 #sidebar a{
-	text-decoration: none;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 400;
@@ -319,14 +321,14 @@ footer .social {
 .featured-headline h3 {
 	display: inline;
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	right: 0px;
+	bottom: 7px;
 	text-align: right;
 }
 
 /* NEWS ARTICLES */
 .article {
-	width: 95%;
+	width: 96%;
 	margin-bottom: 30px;
 }
 
@@ -453,7 +455,6 @@ ul{
 	float: left;
 	width: 200px;
 	height: auto;
-
 	background-repeat: no-repeat;
 	background-position: 10px;
 }
@@ -511,20 +512,6 @@ button:active {
 }
 
 /* MEDIA QUERIES */ 
-@media only screen and (max-device-width: 960px) {
-	.flex {
-		display: block;
-	}
-	.col-1 {
-		width: 100%;
-	}
-	.col-2 {
-		width: 100%;
-	}
-	.col-3 {
-		width: 33%;
-	}
-}
 @media (max-width: 960px) {
 	.flex {
 		display: block;
@@ -549,6 +536,12 @@ button:active {
 	nav {
 		clear: both;
 	}
+	.featured-headline h3 {
+		right: 3px;
+	}
+	.article {
+		width: 99%;
+	}
 }
 
 @media (max-width: 480px) {
@@ -563,5 +556,58 @@ button:active {
 	}
 	nav a {
 		display: block;
+	}
+	.featured-headline {
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-device-width: 960px) {
+	.flex {
+		display: block;
+	}
+	.col-1 {
+		width: 100%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 33%;
+	}
+
+	#sidebar {
+		min-height: 100%;
+	}
+	.social {
+		float: left;
+		padding-top: 15px;
+	}
+	nav {
+		clear: both;
+	}
+	.featured-headline h3 {
+		right: 3px;
+	}
+	.article {
+		width: 99%;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+	.flex-wrap {
+		display: block;
+	}
+	.col-3 {
+		width: 100%;
+	}
+	.col-50 {
+		width: 100%;
+	}
+	nav a {
+		display: block;
+	}
+	.featured-headline {
+		margin-bottom: 10px;
 	}
 }
