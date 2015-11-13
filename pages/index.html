@@ -12,7 +12,7 @@ PURPOSE: The front page highlights the most important content of the website, an
 	<link href="../style/style.css" rel="stylesheet">
 	<link rel="shortcut icon" href="../images/tabicon.ico">
 </head>
-<body onload="blocking('article1'); blocking('article2');">
+<body>
 	<!--The front page has a slightly different header structure due to the featured content section-->
 	<div class="featured">
 	<!-- The featured class div holds the main featured image -->
@@ -31,10 +31,7 @@ PURPOSE: The front page highlights the most important content of the website, an
 					<!-- Main Navigation -->
 						<ul>
 							<li><a href="index.html">NEWS</a></li>
-							<li><a href="about.html">ABOUT</a>
- 
-								
-							</li>
+							<li><a href="about.html">ABOUT</a></li>
 							<li><a href="teams.html">TEAM</a>
 								<ul class="transparent dropdown">
 								<!-- Dropdown navigation appears when hovering team -->
@@ -45,7 +42,6 @@ PURPOSE: The front page highlights the most important content of the website, an
 								</ul>
 							</li>
 							<li><a href="sponsors.html">SPONSORS</a></li>
-
 							<li><a href="shop.html">SHOP</a>
 								<ul class="transparent dropdown">
 								<!-- Dropdown navigation appears when hovering about -->
@@ -82,7 +78,7 @@ PURPOSE: The front page highlights the most important content of the website, an
 				<img src="../images/Legacy_Void.png">
 
 				<p>The new expansion, Legacy of the Void, features an epic single-player story, all-new cooperative modes, and intense competitive multiplayer gameplay.</p>
-				<div id="article1">
+				<div id="article1" style="display: none">
 					<br>
 					The protoss armada prepares for battle, and the countdown to reclaim Aiur has begun! In Legacy of the Void, players will guide protoss legends Artanis and Zeratul as they fight to unite the protoss race, take back their homeworld, and vanquish the ancient evil that threatens the universe.<br><br>
 
@@ -96,7 +92,7 @@ PURPOSE: The front page highlights the most important content of the website, an
 				<p>Posted By: Olav G. Todal</p>
 				<img src="../images/hearthstone.jpg">
 				<p>The "Salty Gaming" organization is proud to announce that Damz is to join its venerated and highly relevant hearthstone roster. He is known among other things for achieving rank 80 on the ladder in season 13, a testament to his high-level mastery of RNGesus' teachings.</p>
-				<div id="article2">
+				<div id="article2" style="display: none">
 					<br>
 					The founder and de facto leader of Team Salty Gaming, Arnt Bjornson, had this to say about this glorious addition:  "have spent a tremendous amount of time, effort and money to finalize this deal, and I am sure it will pay off in the future."<br><br>
 					When asked about his thoughts on joining the organization Damz responded:"think this is fantastic. I believe I'll be able to reach new heights with the support of this oraganiztion." He then added, "Expect me at Blizzcon next year!"<br><br>
@@ -114,8 +110,10 @@ PURPOSE: The front page highlights the most important content of the website, an
 			<p class="side_button"><a href="https://www.youtube.com">Youtube</a></p>
 			<h4>STREAM</h4>
 			<!--Widget til bruk av Twitch.tv online eller ikke er hentet fra https://github.com/svinkle/twitch-tv-widget-->
+			
 			<p class="side_button"><a href="http://www.twitch.tv/imaltont">Araneae</a><iframe src="http://svinkle.github.com/twitch-tv-widget/?username=imaltont" width="100%" height="64" frameborder="0"></iframe></p>
 			<p class="side_button"><a href="http://www.twitch.tv/sqlepytt1">Damz</a><iframe src="http://svinkle.github.com/twitch-tv-widget/?username=sqlepytt1" width="100%" height="64" frameborder="0"></iframe></p>
+			
 		</div>
 	</div>
 
@@ -123,6 +121,5 @@ PURPOSE: The front page highlights the most important content of the website, an
 	<!-- Footer from header_footer.js -->
 	<script type="text/javascript" src="../scripts/header_footer.js"></script>
 	<script type="text/javascript" src="../scripts/dropdownart.js"></script>
-	<script type="text/javascript" src="../scripts/dropdownmenu.js"></script>
 </body>
 </html>
