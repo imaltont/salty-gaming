@@ -1,7 +1,7 @@
 /*
 FILE NAME: style/style.css
 WRITTEN BY: The whole group
-WHEN: October 2015
+WHEN: October/November 2015
 PURPOSE: Style/design of all th elements on the web pages.
 */
 
@@ -547,7 +547,7 @@ button:active {
 		right: 3px;
 	}
 	.article {
-		width: 99%;
+		width: 100%;
 	}
 }
 

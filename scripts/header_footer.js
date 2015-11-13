@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 		//classes for the div
 		h_div.className = "flex container space-between";
 		//insert html for the header
-		h_div.innerHTML = "<a href=\"../pages/index.html\"><img id=\"logo\" src=\"../images/logo.png\"/></a><div class=\"\"><div class=\"social\"><a href=\"\"><img src=\"../images/facebook.png\"></a><a href=\"\"><img src=\"../images/twitter.png\"></a><a href=\"\"><img src=\"../images/youtube.png\"></a></div><nav><ul><li><a href=\"index.html\">NEWS</a></li><li><a href=\"about.html\">ABOUT</a><ul class=\"dropdown\"><li><a href=\"#\">History</a></li><li><a href=\"#\">Achievements</a></li><li><a href=\"#\">Goals</a></li></ul></li><li><a href=\"teams.html\">TEAM</a><ul class=\"dropdown\"><li><a href=\"#\">Starcraft 2</a></li><li><a href=\"#\">Hearthstone</a></li></ul></li><li><a href=\"sponsors.html\">SPONSORS</a></li><li><a href=\"shop.html\">SHOP</a></li><li><a href=\"contact.html\">CONTACT</a></li></ul></nav></div>";
+		h_div.innerHTML = "<a href=\"../pages/index.html\"><img id=\"logo\" src=\"../images/logo.png\"/></a><div class=\"\"><div class=\"social\"><a href=\"https://www.facebook.com\"><img src=\"../images/facebook.png\"></a><a href=\"https://twitter.com\"><img src=\"../images/twitter.png\"></a><a href=\"https://www.youtube.com\"><img src=\"../images/youtube.png\"></a></div><nav><ul><li><a href=\"index.html\">NEWS</a></li><li><a href=\"about.html\">ABOUT</a><ul class=\"dropdown\"><li><a href=\"#\">History</a></li><li><a href=\"#\">Achievements</a></li><li><a href=\"#\">Goals</a></li></ul></li><li><a href=\"teams.html\">TEAM</a><ul class=\"dropdown\"><li><a href=\"#\">Starcraft 2</a></li><li><a href=\"#\">Hearthstone</a></li></ul></li><li><a href=\"sponsors.html\">SPONSORS</a></li><li><a href=\"shop.html\">SHOP</a></li><li><a href=\"contact.html\">CONTACT</a></li></ul></nav></div>";
 		//add the header to the header-element
 		elements.header.appendChild(h_div);	
 	}
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 		//classes for the div
 		f_div.className = "flex-footer container vertical-center";
 		//insert html for the footer
-		f_div.innerHTML = "<div class=\"col-3\" style=\"text-align: left;\">Copyright 2015|All Rights Reserved</div><div class=\"col-3\" style=\"text-align: center;\"><img src=\"../images/small_logo.png\"></div><div class=\"social col-3\"><a href=\"\"><img src=\"../images/facebook.png\"></a><a href=\"\"><img src=\"../images/twitter.png\"></a><a href=\"\"><img src=\"../images/youtube.png\"></a></div>";
+		f_div.innerHTML = "<div class=\"col-3\" style=\"text-align: left;\">Copyright 2015|All Rights Reserved</div><div class=\"col-3\" style=\"text-align: center;\"><img src=\"../images/small_logo.png\"></div><div class=\"social col-3\"><a href=\"https://www.facebook.com\"><img src=\"../images/facebook.png\"></a><a href=\"https://twitter.com\"><img src=\"../images/twitter.png\"></a><a href=\"https://www.youtube.com\"><img src=\"../images/youtube.png\"></a></div>";
 		//add the footer to the footer-element
 		elements.footer.appendChild(f_div);
 		}
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 		//classes for the div
 		p_h_div.className = "flex container space-between";
 		//insert html for the header
-		p_h_div.innerHTML = "<a href=\"../../pages/index.html\"><img id=\"logo\" src=\"../../images/logo.png\"/></a><div class=\"\"><div class=\"social\"><a href=\"\"><img src=\"../../images/facebook.png\"></a><a href=\"\"><img src=\"../../images/twitter.png\"></a><a href=\"\"><img src=\"../../images/youtube.png\"></a></div><nav><ul><li><a href=\"../index.html\">NEWS</a></li><li><a href=\"../about.html\">ABOUT</a><ul class=\"../dropdown\"><li><a href=\"#\">History</a></li><li><a href=\"#\">Achievements</a></li><li><a href=\"#\">Goals</a></li></ul></li><li><a href=\"../teams.html\">TEAM</a><ul class=\"../dropdown\"><li><a href=\"#\">Starcraft 2</a></li><li><a href=\"#\">Hearthstone</a></li></ul></li><li><a href=\"../sponsors.html\">SPONSORS</a></li><li><a href=\"../shop.html\">SHOP</a></li><li><a href=\"../contact.html\">CONTACT</a></li></ul></nav></div>";
+		p_h_div.innerHTML = "<a href=\"../../pages/index.html\"><img id=\"logo\" src=\"../../images/logo.png\"/></a><div class=\"\"><div class=\"social\"><a href=\"https://www.facebook.com\"><img src=\"../../images/facebook.png\"></a><a href=\"https://twitter.com\"><img src=\"../../images/twitter.png\"></a><a href=\"https://www.youtube.com\"><img src=\"../../images/youtube.png\"></a></div><nav><ul><li><a href=\"../index.html\">NEWS</a></li><li><a href=\"../about.html\">ABOUT</a><ul class=\"../dropdown\"><li><a href=\"#\">History</a></li><li><a href=\"#\">Achievements</a></li><li><a href=\"#\">Goals</a></li></ul></li><li><a href=\"../teams.html\">TEAM</a><ul class=\"../dropdown\"><li><a href=\"#\">Starcraft 2</a></li><li><a href=\"#\">Hearthstone</a></li></ul></li><li><a href=\"../sponsors.html\">SPONSORS</a></li><li><a href=\"../shop.html\">SHOP</a></li><li><a href=\"../contact.html\">CONTACT</a></li></ul></nav></div>";
 		//add the header to the header-element
 		elements.player_header.appendChild(p_h_div);
 	}
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 		//classes for the div
 		p_f_div.className = "flex-footer container vertical-center";
 		//insert html for the footer
-		p_f_div.innerHTML = "<div class=\"col-3\" style=\"text-align: left;\">Copyright 2015|All Rights Reserved</div><div class=\"col-3\" style=\"text-align: center;\"><img src=\"../../images/small_logo.png\"></div><div class=\"social col-3\"><a href=\"\"><img src=\"../../images/facebook.png\"></a><a href=\"\"><img src=\"../../images/twitter.png\"></a><a href=\"\"><img src=\"../../images/youtube.png\"></a></div>";
+		p_f_div.innerHTML = "<div class=\"col-3\" style=\"text-align: left;\">Copyright 2015|All Rights Reserved</div><div class=\"col-3\" style=\"text-align: center;\"><img src=\"../../images/small_logo.png\"></div><div class=\"social col-3\"><a href=\"https://www.facebook.com\"><img src=\"../../images/facebook.png\"></a><a href=\"https://twitter.com\"><img src=\"../../images/twitter.png\"></a><a href=\"https://www.youtube.com\"><img src=\"../../images/youtube.png\"></a></div>";
 		//add the footer to the footer-element
 		elements.player_footer.appendChild(p_f_div);
 	}
