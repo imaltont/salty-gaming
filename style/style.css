@@ -327,16 +327,51 @@ footer .social {
 	display: inline;
 }
 
+.featured-headline h1:hover {
+	color: #aaa;
+}
+
 .featured-headline .container {
 	position: relative;
 }
-
+/* (no longer in use)
 .featured-headline h3 {
 	display: inline;
 	position: absolute;
 	right: 0px;
 	bottom: 7px;
 	text-align: right;
+}*/
+
+.featured {
+	background: url("../images/featured-bw.jpg") center center;
+	height: 500px;
+	position: relative;
+	background-size: cover;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	-webkit-transition: background-image 0.2s ease-in-out;
+    -moz-transition: background-image 0.2s ease-in-out;
+    -o-transition: background-image 0.2s ease-in-out;
+    -ms-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.nextPrev {
+	display: inline;
+	position: absolute;
+	right: 0px;
+	bottom: 7px;
+}
+
+.nextPrev img{
+	height: 25px;
+	width: 50px;
+	padding-bottom: 2px;
+}
+
+.nextPrev img:hover{
+	height: 29px;
+	padding-bottom: 0px;
 }
 
 /* NEWS ARTICLES */

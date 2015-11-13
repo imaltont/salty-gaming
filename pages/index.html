@@ -12,9 +12,9 @@ PURPOSE: The front page highlights the most important content of the website, an
 	<link href="../style/style.css" rel="stylesheet">
 	<link rel="shortcut icon" href="../images/tabicon.ico">
 </head>
-<body onload="blocking('article1'); blocking('article2');">
+<body>
 	<!--The front page has a slightly different header structure due to the featured content section-->
-	<div class="featured">
+	<div class="featured" id="featuredImage">
 	<!-- The featured class div holds the main featured image -->
 		<header class="transparent">
 		<!-- Header has a transparent class to get the transparency effect-->
@@ -61,10 +61,27 @@ PURPOSE: The front page highlights the most important content of the website, an
 		</header>
 		<div class="featured-headline">
 		<!-- The featured headline class div contains the "shadow box" that holds the main headline for the featured content box -->
-			<div class="container">
-				<h2>Tournament Highlights</h2>
-				<h1>ESL Cologne 2015</h1>
-				<h3><span class="readmore">Read More</span></h3>
+			<!--Contains multiple featued headlines. all but 1 are hidden with scripts/featuredHeadline.js according to id's Background image is added with style/style.css-->
+			<div class="featured-headline">
+				<div class="container" id="FH0">
+					<h2>Awesome T-shirts</h2>
+					<a href="shop.html"><h1>New Shop</h1></a>
+				</div>
+				<div class="container" id="FH1">
+					<h2>New Harthstone player</h2>
+					<a href="#article2"><h1>DAMZ</h1></a>
+				</div>
+				<div class="container" id="FH2">
+					<h2>Starcraft 2 expansion</h2>
+					<a href="#article1"><h1>Get ready</h1></a>
+				</div>
+				<!--Contains links for manual Featured Headline switching-->
+				<div class="container">
+					<div class="nextPrev">
+						<a href="#" id="previousFeatured"><img src="../images/arrow-icon-L-white.png" alt="prev"/></a>
+						<a href="#" id="nextFeatured"><img src="../images/arrow-icon-R-white.png" alt="next"/></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -122,7 +139,8 @@ PURPOSE: The front page highlights the most important content of the website, an
 	<footer id = "page_footer">	</footer>
 	<!-- Footer from header_footer.js -->
 	<script type="text/javascript" src="../scripts/header_footer.js"></script>
-	<script type="text/javascript" src="../scripts/dropdownart.js"></script>
+	<script type="text/javascript" src="../scripts/featuredHeadline.js"></script>
 	<script type="text/javascript" src="../scripts/dropdownmenu.js"></script>
+	<script type="text/javascript" src="../scripts/dropdownart.js"></script>
 </body>
 </html>
