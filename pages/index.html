@@ -1,3 +1,10 @@
+<!--
+FILE NAME: pages/index.html
+WRITTEN BY: Espen Dammen
+WHEN: October 2015
+PURPOSE: The front page highlights the most important content of the website, and hosts the news articles and featured content.
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,25 +13,32 @@
 	<link rel="shortcut icon" href="../images/tabicon.ico">
 
 </head>
-<body onload="blocking('article1'); blocking('article2'); blocking('article3');">
+<body onload="blocking('article1'); blocking('article2');">
+	<!--The front page has a slightly different header structure due to the featured content section-->
 	<div class="featured">
+	<!-- The featured class div holds the main featured image -->
 		<header class="transparent">
+		<!-- Header has a transparent class to get the transparency effect-->
 			<div class="flex container space-between">
 				<img id="logo" src="../images/logo.png"/>
 				<div>
 					<div class="social">
-						<a href=""><img src="../images/facebook.png"></a>
-						<a href=""><img src="../images/twitter.png"></a>
-						<a href=""><img src="../images/youtube.png"></a>
+					<!-- Social icons -->
+						<a href="https://www.facebook.com"><img src="../images/facebook.png"></a>
+						<a href="https://twitter.com"><img src="../images/twitter.png"></a>
+						<a href="https://www.youtube.com"><img src="../images/youtube.png"></a>
 					</div>
 					<nav>
+					<!-- Main Navigation -->
 						<ul>
 							<li><a href="index.html">NEWS</a></li>
 							<li><a href="about.html">ABOUT</a>
+ 
 								
 							</li>
 							<li><a href="teams.html">TEAM</a>
 								<ul class="transparent dropdown">
+								<!-- Dropdown navigation appears when hovering team -->
 									<li><a href="players/player1.html">PONTIUS</a></li>
 									<li><a href="players/player2.html">ARANEAE</a></li>
 									<li><a href="players/player3.html">DAMZ</a></li>
@@ -35,6 +49,7 @@
 
 							<li><a href="shop.html">SHOP</a>
 								<ul class="transparent dropdown">
+								<!-- Dropdown navigation appears when hovering about -->
 									<li><a href="shop.html">BROWSE</a></li>
 									<li><a href="form.html">ORDER</a></li>
 								</ul>
@@ -46,6 +61,7 @@
 			</div>
 		</header>
 		<div class="featured-headline">
+		<!-- The featured headline class div contains the "shadow box" that holds the main headline for the featured content box -->
 			<div class="container">
 				<h2>Tournament Highlights</h2>
 				<h1>ESL Cologne 2015</h1>
@@ -55,9 +71,12 @@
 	</div>
 
 	<div class="flex container">
+	<!-- Main container for the page -->
 		<div class="col-1">
+			<!-- Main column container, col-1 type -->
 			<p class="nav_structure col-1"><br></p>
 			<div class="article">
+			<!-- Article div -->
 				<h1>EN TARO ADUN! The New Starcraft II Expansion In Stores Now!</h1>
 				<p>Posted By: Olav G. Todal</p>
 
@@ -73,6 +92,7 @@
 				<h3><span class="readmore" id="btn1" onclick="blocking('article1'); button('btn1'); return false;">Read More</span></h3>
 			</div>
 			<div class="article">
+			<!-- Article div -->
 				<h1>Espen "Damz" Dammen Joins Salty Gaming</h1>
 				<p>Posted By: Olav G. Todal</p>
 				<img src="../images/hearthstone.jpg">
@@ -81,25 +101,27 @@
 					<br>
 					The founder and de facto leader of Team Salty Gaming, Arnt Bjornson, had this to say about this glorious addition:  "have spent a tremendous amount of time, effort and money to finalize this deal, and I am sure it will pay off in the future."<br><br>
 					When asked about his thoughts on joining the organization Damz responded:"think this is fantastic. I believe I'll be able to reach new heights with the support of this oraganiztion." He then added, "Expect me at Blizzcon next year!"<br><br>
-					We wish him the best of luck in reaching his goals, and may RNGesus be forever in his favour.		
+					We wish him the best of luck in reaching his goals, and may RNGesus be forever in his favour.	
 				</div>
 				<h3><span class="readmore" id="btn2" onclick="blocking('article2'); button('btn2'); return false;">Read More</span></h3>
 			</div>
 		</div>
 
 		<div id="sidebar" class="col-2">
+		<!-- Sidebar container-->
 			<h4>FOLLOW US</h4>
-			<p class="side_button"><a href="#">Facebook</a></p>
-			<p class="side_button"><a href="#">Twitter</a></p>
-			<p class="side_button"><a href="#">Youtube</a></p>
+			<p class="side_button"><a href="https://www.facebook.com">Facebook</a></p>
+			<p class="side_button"><a href="https://twitter.com">Twitter</a></p>
+			<p class="side_button"><a href="https://www.youtube.com">Youtube</a></p>
 			<h4>STREAM</h4>
-			<p class="side_button"><a href="#">TWITCH1</a></p>
-			<p class="side_button"><a href="#">TWITCH2</a></p>
-			<p class="side_button"><a href="#">TWITCH3</a></p>
+			<!--Widget til bruk av Twitch.tv online eller ikke er hentet fra https://github.com/svinkle/twitch-tv-widget-->
+			<p class="side_button"><a href="http://www.twitch.tv/imaltont">Araneae</a><iframe src="http://svinkle.github.com/twitch-tv-widget/?username=imaltont" width="100%" height="64" frameborder="0"></iframe></p>
+			<p class="side_button"><a href="http://www.twitch.tv/sqlepytt1">Damz</a><iframe src="http://svinkle.github.com/twitch-tv-widget/?username=sqlepytt1" width="100%" height="64" frameborder="0"></iframe></p>
 		</div>
 	</div>
 
 	<footer id = "page_footer">	</footer>
+	<!-- Footer from header_footer.js -->
 	<script type="text/javascript" src="../scripts/header_footer.js"></script>
 	<script type="text/javascript" src="../scripts/dropdownart.js"></script>
 	<script type="text/javascript" src="../scripts/dropdownmenu.js"></script>
