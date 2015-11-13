@@ -11,4 +11,3 @@ function button(nr) {
 	innerText = (document.getElementById(nr).innerText == 'READ MORE') ? 'HIDE' : 'READ MORE';	
 	document.getElementById(nr).innerText = innerText;
 };
-

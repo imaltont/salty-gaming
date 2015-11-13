@@ -304,10 +304,16 @@ footer .social {
 /* FRONT PAGE */
 /*FEATURED*/
 .featured {
-	background: url("../images/featured-bw.jpg") center center;
+	background: url("../images/shop-featured-image.jpg") center center;
 	height: 500px;
 	position: relative;
 	background-size: cover;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	-webkit-transition: background-image 0.2s ease-in-out;
+    -moz-transition: background-image 0.2s ease-in-out;
+    -o-transition: background-image 0.2s ease-in-out;
+    -ms-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
 }
 
 .featured-headline {
@@ -342,19 +348,6 @@ footer .social {
 	bottom: 7px;
 	text-align: right;
 }*/
-
-.featured {
-	background: url("../images/featured-bw.jpg") center center;
-	height: 500px;
-	position: relative;
-	background-size: cover;
-	-webkit-transition: background-image 0.2s ease-in-out;
-	-webkit-transition: background-image 0.2s ease-in-out;
-    -moz-transition: background-image 0.2s ease-in-out;
-    -o-transition: background-image 0.2s ease-in-out;
-    -ms-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
-}
 
 .nextPrev {
 	display: inline;

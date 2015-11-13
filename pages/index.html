@@ -67,13 +67,13 @@ PURPOSE: The front page highlights the most important content of the website, an
 					<h2>Awesome T-shirts</h2>
 					<a href="shop.html"><h1>New Shop</h1></a>
 				</div>
-				<div class="container" id="FH1">
-					<h2>New Harthstone player</h2>
-					<a href="#article2"><h1>DAMZ</h1></a>
+				<div class="container hide" id="FH1">
+					<h2>New Hearthstone player</h2>
+					<a onclick="blocking('article2'); button('btn2');" href="#headline2"><h1>DAMZ</h1></a>
 				</div>
-				<div class="container" id="FH2">
+				<div class="container hide" id="FH2">
 					<h2>Starcraft 2 expansion</h2>
-					<a href="#article1"><h1>Get ready</h1></a>
+					<a onclick="blocking('article1'); button('btn1');" href="#headline1"><h1>Get ready</h1></a>
 				</div>
 				<!--Contains links for manual Featured Headline switching-->
 				<div class="container">
@@ -93,13 +93,13 @@ PURPOSE: The front page highlights the most important content of the website, an
 			<p class="nav_structure col-1"><br></p>
 			<div class="article">
 			<!-- Article div -->
-				<h1>EN TARO ADUN! The New Starcraft II Expansion In Stores Now!</h1>
+				<h1 id="headline1">EN TARO ADUN! The New Starcraft II Expansion In Stores Now!</h1>
 				<p>Posted By: Olav G. Todal</p>
 
 				<img src="../images/Legacy_Void.png">
 
 				<p>The new expansion, Legacy of the Void, features an epic single-player story, all-new cooperative modes, and intense competitive multiplayer gameplay.</p>
-				<div id="article1">
+				<div id="article1" style="display: none">
 					<br>
 					The protoss armada prepares for battle, and the countdown to reclaim Aiur has begun! In Legacy of the Void, players will guide protoss legends Artanis and Zeratul as they fight to unite the protoss race, take back their homeworld, and vanquish the ancient evil that threatens the universe.<br><br>
 
@@ -109,15 +109,15 @@ PURPOSE: The front page highlights the most important content of the website, an
 			</div>
 			<div class="article">
 			<!-- Article div -->
-				<h1>Espen "Damz" Dammen Joins Salty Gaming</h1>
+				<h1 id="headline2">Espen "Damz" Dammen Joins Salty Gaming</h1>
 				<p>Posted By: Olav G. Todal</p>
 				<img src="../images/hearthstone.jpg">
 				<p>The "Salty Gaming" organization is proud to announce that Damz is to join its venerated and highly relevant hearthstone roster. He is known among other things for achieving rank 80 on the ladder in season 13, a testament to his high-level mastery of RNGesus' teachings.</p>
-				<div id="article2">
+				<div id="article2" style="display: none">
 					<br>
 					The founder and de facto leader of Team Salty Gaming, Arnt Bjornson, had this to say about this glorious addition:  "have spent a tremendous amount of time, effort and money to finalize this deal, and I am sure it will pay off in the future."<br><br>
 					When asked about his thoughts on joining the organization Damz responded:"think this is fantastic. I believe I'll be able to reach new heights with the support of this oraganiztion." He then added, "Expect me at Blizzcon next year!"<br><br>
-					We wish him the best of luck in reaching his goals, and may RNGesus be forever in his favour.	
+					We wish him the best of luck in reaching his goals, and may RNGesus be forever in his favour.
 				</div>
 				<h3><span class="readmore" id="btn2" onclick="blocking('article2'); button('btn2'); return false;">Read More</span></h3>
 			</div>
@@ -140,7 +140,6 @@ PURPOSE: The front page highlights the most important content of the website, an
 	<!-- Footer from header_footer.js -->
 	<script type="text/javascript" src="../scripts/header_footer.js"></script>
 	<script type="text/javascript" src="../scripts/featuredHeadline.js"></script>
-	<script type="text/javascript" src="../scripts/dropdownmenu.js"></script>
 	<script type="text/javascript" src="../scripts/dropdownart.js"></script>
 </body>
 </html>

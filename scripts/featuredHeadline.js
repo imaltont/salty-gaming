@@ -6,7 +6,12 @@ PURPOSE: Display display a slideshow of images and headlines on the front page.
 */
 window.onload = function () {
 	/*List of Featured Headline Id's*/
-	var FHList = ["FH0", "FH1", "FH2"];
+	var FH0 = document.getElementById("FH0");
+	var FH1 = document.getElementById("FH1");
+	var FH2 = document.getElementById("FH2");
+	var FHList = [FH0, FH1, FH2];
+
+	var featuredImage = document.getElementById("featuredImage");
 	/*List of Featured Images*/
 	var FImageList = ["shop-featured-image.jpg", "hearthstone.jpg", "Legacy_Void.png"];
 	/*Stores current list index*/
@@ -17,11 +22,10 @@ window.onload = function () {
 	function showHeadline(number) {
 		for (var i = 0; i <= FHList.length-1; i += 1) {
 			if (i === number) {
-				document.getElementById(FHList[i]).style.display="inherit";
-				document.getElementById("featuredImage").style.backgroundImage="url(../images/" + FImageList[i] + ")";
-
+				FHList[i].style.display="inherit";
+				featuredImage.style.backgroundImage="url(../images/" + FImageList[i] + ")";
 			} else {
-				document.getElementById(FHList[i]).style.display="none";
+				FHList[i].style.display="none";
 			};
 		};
 	};
