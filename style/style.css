@@ -19,24 +19,6 @@ em a {
 	color: black;
 }
 
-/* FONTS */
-/*
-@font-face {
-	font-family: LatoBlack;
-	src: url("fonts/Lato-Black.ttf");
-}
-
-@font-face {
-	font-family: Lato;
-	src: url("fonts/Lato-Regular.ttf");
-}
-
-@font-face {
-	font-family: OpenSans;
-	src: url("fonts/OpenSans-Regular.ttf");
-}
-*/
-
 /* FONT SPECIFICATION */
 body {
 	font-family: 'Lato', sans-serif;

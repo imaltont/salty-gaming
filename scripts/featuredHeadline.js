@@ -1,6 +1,6 @@
 /*
 FILE NAME: featuredHeadline.js
-WRITTEN BY: Martin Dammerud
+WRITTEN BY: Martin Dammerud CONTRIBUTOR: Espen Dammen
 WHEN: November 2015
 PURPOSE: Display display a slideshow of images and headlines on the front page.
 */
